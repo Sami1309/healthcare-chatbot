@@ -2,6 +2,24 @@
 
 This is a demo for a healthcare chat application that implements a rudimentary RAG system and generates dynamic UI within the chat window.
 
+## Features
+
+### Dynamic Link generation
+
+Can create links to relevant sites based on context
+
+<img width="848" alt="Screenshot 2025-03-26 at 12 44 18 AM" src="https://github.com/user-attachments/assets/b52c9c77-2676-46a6-a54f-551a4dfe3eff" />
+
+### Chat suggestions
+
+Offers chat suggestions based on chat context and history
+
+### Dynamic form generation
+
+Generates forms based on desired user input.
+
+<img width="860" alt="Screenshot 2025-03-26 at 12 44 47 AM" src="https://github.com/user-attachments/assets/361137e6-ce18-43cb-a595-54568dab934c" />
+
 ## Setup
 
 ### Frontend
