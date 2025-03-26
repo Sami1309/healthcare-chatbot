@@ -1,6 +1,6 @@
 # Healthcare Chat App Demo
 
-This is a demo for a healthcare chat application with a React frontend and a Python Flask backend.
+This is a demo for a healthcare chat application that implements a rudimentary RAG system and generates dynamic UI within the chat window.
 
 ## Setup
 
