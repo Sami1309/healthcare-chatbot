@@ -1,0 +1,11 @@
+Payment ID: PAY001
+Date: 2025-01-20
+Amount: $250.00
+Method: Credit Card
+Status: Completed
+
+Payment ID: PAY002
+Date: 2025-02-25
+Amount: $150.00
+Method: Credit Card
+Status: Completed

@@ -1,0 +1,146 @@
+/* Main container styles */
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .chat-container {
+    width: 90%;
+    max-width: 800px;
+    height: 90vh;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  /* Header styles */
+  .app-header {
+    padding: 20px 25px;
+    background-color: #3498db;
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .app-header .title-section {
+    flex: 1;
+  }
+  
+  .app-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .app-subtitle {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+
+  .reset-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .reset-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .reset-button svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* Chat content area */
+  .chat-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .chat-container {
+      width: 95%;
+      height: 95vh;
+    }
+    .suggestion-container {
+      padding: 8px;
+      gap: 8px;
+    }
+    .suggestion-button {
+      padding: 8px 12px;
+      font-size: 0.8rem;
+      max-width: 100%;
+    }
+    
+    .app-header h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .suggestion-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eaeaea;
+    justify-content: center;
+  }
+
+  .suggestion-button {
+    background-color: white;
+    color: #3498db;
+    border: 1px solid #3498db;
+    border-radius: 18px;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    max-width: 300px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.3;
+    text-align: left;
+    flex: 1 1 auto;
+  }
+  
+  .suggestion-button:hover {
+    background-color: #eaf5fd;
+  }
+
+  @media (min-width: 769px) {
+    .suggestion-button {
+      flex: 0 1 auto;
+      min-width: 120px;
+      max-width: calc(50% - 10px); /* For 2 buttons per row with gap */
+    }
+    
+    /* When only 1 or 2 suggestions are present */
+    .suggestion-container:has(.suggestion-button:only-child) .suggestion-button,
+    .suggestion-container:has(.suggestion-button:nth-last-child(2):first-child) .suggestion-button {
+      max-width: 350px;
+    }
+  }

@@ -1,0 +1,11 @@
+Name: Jane Doe
+Age: 30
+Gender: Female
+Address: 456 Elm Street
+City: Metropolis
+State: NY
+ZIP: 10001
+Phone: (555) 123-4567
+Email: jane.doe@example.com
+Medical ID: MD123456
+Insurance: HealthCare Plus

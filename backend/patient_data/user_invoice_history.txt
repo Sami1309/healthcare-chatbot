@@ -1,0 +1,18 @@
+Invoice ID: INV001
+Date: 2025-01-15
+Description: Consultation and Lab Tests
+Amount: $250.00
+Status: Paid (2025-01-17)
+
+Invoice ID: INV002
+Date: 2025-02-20
+Description: Follow-up Consultation
+Amount: $150.00
+Status: Paid (2025-02-21)
+
+Invoice ID: INV003
+Date: 2025-03-10
+Description: Medication Billing, Lab tests
+Notes: Prescription filled following check up with Dr. Nomos
+Amount: $40.00
+Status: Unpaid. Insurance covered $160 (20% coinsurance)
